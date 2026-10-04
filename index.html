@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-logo">N</div>
+                <div>
+                    <strong>NOVA</strong>
+                    <span>ADMIN</span>
+                </div>
+            </div>
+
+            <nav id="navigation">
+
+                <button class="nav-item active" data-page="dashboard">
+                    <span>⌂</span>
+                    لوحة التحكم
+                </button>
+
+                <button class="nav-item" data-page="users">
+                    <span>◉</span>
+                    المستخدمون
+                </button>
+
+                <button class="nav-item" data-page="subscriptions">
+                    <span>◆</span>
+                    الاشتراكات
+                </button>
+
+                <button class="nav-item" data-page="ai">
+                    <span>✦</span>
+                    الذكاء الاصطناعي
+                </button>
+
+                <button class="nav-item" data-page="security">
+                    <span>🛡</span>
+                    الأمان
+                </button>
+
+                <button class="nav-item" data-page="quality">
+                    <span>✓</span>
+                    الجودة
+                </button>
+
+                <button class="nav-item" data-page="pages">
+                    <span>▣</span>
+                    الصفحات
+                </button>
+
+                <button class="nav-item" data-page="api">
+                    <span>⌘</span>
+                    API
+                </button>
+
+                <button class="nav-item" data-page="logs">
+                    <span>☷</span>
+                    السجلات
+                </button>
+
+                <button class="nav-item" data-page="settings">
+                    <span>⚙</span>
+                    الإعدادات
+                </button>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    النظام يعمل
+                </div>
+
+                <button id="logoutButton" class="logout">
+                    تسجيل الخروج
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main -->
+        <main class="main">
+
+            <header class="topbar">
+
+                <button id="menuButton" class="menu-button">
+                    ☰
+                </button>
+
+                <div>
+                    <h1 id="pageTitle">لوحة التحكم</h1>
+                    <p id="pageDescription">
+                        مركز إدارة منصة Nova
+                    </p>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="icon-button" id="notifications">
+                        🔔
+                    </button>
+
+                    <div class="admin-profile">
+                        <div class="avatar">SA</div>
+
+                        <div>
+                            <strong>Super Admin</strong>
+                            <span>Administrator</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section id="content" class="content">
+
+                <!-- Dashboard يتم تحميله من app.js -->
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <div id="toast" class="toast"></div>
+
+
+    <script src="config.js"></script>
+    <script src="auth.js"></script>
+    <script src="api.js"></script>
+    <script src="security.js"></script>
+    <script src="admin.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
