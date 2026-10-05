@@ -1,8 +1,5 @@
 /*
  * NOVA ADMIN CONFIGURATION
- *
- * هذا الملف لا يحتوي أسرارًا.
- * عنوان الـBackend سنضعه عندما ننشئ Nova Backend.
  */
 
 const NOVA_CONFIG = {
@@ -14,14 +11,22 @@ const NOVA_CONFIG = {
     environment: "development",
 
     /*
-     * سيصبح مثل:
+     * Nova Backend
      *
+     * محليًا:
+     * http://127.0.0.1:8000
+     *
+     * لاحقًا عند نشر Backend:
      * https://api.nova.example.com
-     *
-     * عندما ننشئ الـBackend.
      */
 
-    API_URL: "",
+    API_URL: "http://127.0.0.1:8000",
+
+    /*
+     * جميع مسارات الـAPI تبدأ من هنا
+     */
+
+    API_PREFIX: "/api",
 
     features: {
 
